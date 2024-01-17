@@ -1,11 +1,16 @@
 :root {
-    --White: hsl(0, 0%, 100%);
-    --Off-white: hsl(0, 0%, 94%);
+    --Primary-color: hsl(0, 0%, 94%);
+    --Secondary-color: hsl(0, 0%, 100%);
     --Light-grey: hsl(0, 0%, 86%);
     --Smokey-grey: hsl(0, 1%, 44%);
     --Off-black: hsl(0, 0%, 8%);
     --Purple: hsl(259, 100%, 65%);
     --Light-red: hsl(0, 100%, 67%);
+    }
+
+    .dark-theme{
+        --Primary-color: hsl(228, 100%, 1%);
+        --Secondary-color: hsl(165, 9%, 17%);
     }
     
     @font-face {
@@ -14,19 +19,36 @@
     }
     
     *{
+        margin: 0;
+        padding: 0;
         font-family: Pop !important;
     }
-    
+
     body{
+        background-color: var(--Primary-color);
+    }
+
+    nav{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 10px;
+    }
+
+    #icon{
+        width: 30px;
+        cursor: pointer;
+    }
+    
+    main{
         display: flex;
         justify-content: center;
         align-items: center;
         min-height: 100vh;
-        background-color: var(--Off-white);
     }
     
     .container{
-        background-color: var(--White);
+        background-color: var(--Secondary-color);
         width: 420px;
         max-width: 80%;
         padding: 30px;
@@ -35,22 +57,22 @@
     }
     
     input{
+        background-color: var(--Secondary-color);
         width: 70px;
         padding: 10px;
         border-radius: 5px;
-        border: 2px solid var(--Off-white);
+        border: 2px solid var(--Primary-color);
         outline: none;
     }
     
     input:focus{
-        border: 20px solid var(--Purple);
+        border: 2px solid var(--Purple);
     }
     
-    small {
-        color: red;
+    small{
+        color: var(--Light-red);
         font-size: 0.6rem;
         font-weight: bold;
-        text-transform: capitalize;
     }
     
     .submit-btn{
@@ -65,12 +87,13 @@
         border-radius: 50px;
         position: absolute;
         right: 30px;
-        top: 60px;
+        left: 390px;
+        top: 90px;
         cursor: pointer;
     }
     
     .submit-btn:hover{
-        background-color: black;
+        background-color: var(--Off-black);
     }
     
     .output span{
@@ -88,7 +111,7 @@
     
     .input-flex{
         display: flex;
-        border-bottom: 2px solid var(--Off-white);
+        border-bottom: 2px solid var(--Primary-color);
         margin-bottom: 20px;
     }
     
