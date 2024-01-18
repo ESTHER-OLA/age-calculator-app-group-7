@@ -3,7 +3,6 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
-  <!-- displays site properly based on user's device -->
 
   <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
   <link rel="stylesheet" href="./style.css">
@@ -23,19 +22,19 @@
         <div class="input-container">
           <span>Day</span>
           <input type="number" id="day">
-          <small class="error-day">This field is required</small>
+          <small class="error-day"></small>
         </div>
   
         <div class="input-container">
           <span>Months</span>
           <input type="number" id="month">
-          <small class="error-month">This field is required</small>
+          <small class="error-month"></small>
         </div>
   
         <div class="input-container">
           <span>Years</span>
           <input type="number" id="year">
-          <small class="error-year">This field is required</small>
+          <small class="error-year"></small>
         </div>
       </div> 
        
@@ -44,14 +43,19 @@
       </button>
   
       <div class="output">
-        <h1><span class="output-year">--</span>Years</h1>
-        <h1><span class="output-month">--</span>Months</h1>
-        <h1><span class="output-day">--</span>Days</h1>
+        <h1><span class="output-year">--</span> Years</h1>
+        <h1><span class="output-month">--</span> Months</h1>
+        <h1><span class="output-day">--</span> Days</h1>
       </div>
     </div>
   </main>
 
-  <footer></footer>
+  <footer class="footer-details">
+    <div class="footer-content">
+        Age calculator designed by <b class="text-black">&copy;</b>
+        <a href="https://food-pictures-gallery.netlify.app/" style="color:rgb(255, 188, 19)">Cohort-8 web-dev-pro-group-7</a>
+    </div>
+</footer>
 
   <script src="./main.js">
   </script>

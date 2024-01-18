@@ -114,6 +114,12 @@
         border-bottom: 2px solid var(--Primary-color);
         margin-bottom: 20px;
     }
+
+    footer{
+        text-align: center;
+        text-decoration-color: var(--Secondary-color);
+        background-color: var(--Purple);
+    }
     
     /* app responsiveness */
     
