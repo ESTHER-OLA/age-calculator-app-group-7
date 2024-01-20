@@ -95,15 +95,12 @@ function CalculateDate() {
     // Convert the input values into a valid date format
     let birthday = `${input_month.value}/${input_day.value}/${input_year.value}`;
     let birthdayMill = Date.parse(birthday); // Returns the number of milliseconds since January 1, 1970
-    console.log(birthdayMill);
 
     // Calculate the age difference in milliseconds
     let ageDiffMill = Date.now() - birthdayMill;
-    console.log(ageDiffMill);
 
     // Convert the age difference in milliseconds into a date object
     let ageDate = new Date(ageDiffMill);
-    console.log(ageDate);
 
     // Get the age difference in years, months, and days
     let ageYears = ageDate.getUTCFullYear() - 1970;
