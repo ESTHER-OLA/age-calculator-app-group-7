@@ -39,7 +39,7 @@ Users should will be able to:
 
 - Wilson Joy Ogechukwu [Ohjay25](https://github.com/Ohjay25/age-calculator-app-group-7)
 - Ola Esther Pelumi [Esther-Ola](https://github.com/ESTHER-OLA/age-calculator-app-group-7)
--Bello Moromoke Janet [](https://github.com/)
+-Bello Moromoke Janet [moromoke01](https://github.com/moromoke01/age-calculator-app-group-7)
 
 ### Links
 
