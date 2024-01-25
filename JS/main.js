@@ -36,6 +36,11 @@ input_day.addEventListener("input", (e) => {
   if (+input_day.value > 31) {
     error_day.textContent = "Must be a valid date";
     isValid = false;
+    output_year.textContent = "";
+    output_month.textContent = "";
+    output_day.textContent = "";
+    localStorage.removeItem("age");
+    localStorage.clear(); 
     return;
   } else {
     isValid = true;
@@ -45,6 +50,11 @@ input_day.addEventListener("input", (e) => {
     isValid = false;
     error_day.textContent = "This field is required";
     isValid = false;
+    output_year.textContent = "";
+    output_month.textContent = "";
+    output_day.textContent = "";
+    localStorage.removeItem("age");
+    localStorage.clear(); 
     return;
   } else {
     error_day.textContent = "";
@@ -55,6 +65,11 @@ input_month.addEventListener("input", (e) => {
   if (+input_month.value > 12) {
     error_month.textContent = "Must be a valid date";
     isValid = false;
+    output_year.textContent = "";
+    output_month.textContent = "";
+    output_day.textContent = "";
+    localStorage.removeItem("age");
+    localStorage.clear(); 
     return;
   } else {
     isValid = true;
@@ -64,6 +79,11 @@ input_month.addEventListener("input", (e) => {
     isValid = false;
     error_month.textContent = "This field is required";
     isValid = false;
+    output_year.textContent = "";
+    output_month.textContent = "";
+    output_day.textContent = "";
+    localStorage.removeItem("age");
+    localStorage.clear(); 
     return;
   } else {
     error_month.textContent = "";
@@ -74,6 +94,11 @@ input_year.addEventListener("input", (e) => {
   if (+input_year.value > 2024) {
     error_year.textContent = "Must be a valid date";
     isValid = false;
+    output_year.textContent = "";
+    output_month.textContent = "";
+    output_day.textContent = "";
+    localStorage.removeItem("age");
+    localStorage.clear(); 
     return;
   } else {
     isValid = true;
@@ -83,6 +108,11 @@ input_year.addEventListener("input", (e) => {
     isValid = false;
     error_year.textContent = "This field is required";
     isValid = false;
+    output_year.textContent = "";
+    output_month.textContent = "";
+    output_day.textContent = "";
+    localStorage.removeItem("age");
+     localStorage.clear(); 
     return;
   } else {
     error_year.textContent = "";
@@ -117,10 +147,12 @@ function CalculateDate() {
     localStorage.setItem("age_month", ageMonth);
     localStorage.setItem("age_day", ageDay);
   } else {
-    alert("error");
+    alert("Please enter a valid date of birth");
+    output_year.textContent = "";
+    output_month.textContent = "";
+    output_day.textContent = "";
   }
 }
-
 // Load the calculated age from local storage if it exists
 window.onload = function () {
   // Get the stored values
