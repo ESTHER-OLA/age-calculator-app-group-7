@@ -54,7 +54,6 @@ input_day.addEventListener("input", (e) => {
     output_month.textContent = "";
     output_day.textContent = "";
     localStorage.removeItem("age");
-    localStorage.clear(); 
     return;
   } else {
     error_day.textContent = "";
@@ -83,7 +82,6 @@ input_month.addEventListener("input", (e) => {
     output_month.textContent = "";
     output_day.textContent = "";
     localStorage.removeItem("age");
-    localStorage.clear(); 
     return;
   } else {
     error_month.textContent = "";
@@ -112,7 +110,6 @@ input_year.addEventListener("input", (e) => {
     output_month.textContent = "";
     output_day.textContent = "";
     localStorage.removeItem("age");
-    localStorage.clear(); 
     return;
   } else {
     error_year.textContent = "";
